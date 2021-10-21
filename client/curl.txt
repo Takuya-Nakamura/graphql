@@ -1,0 +1,11 @@
+curl --request POST \
+    --header 'content-type: application/json' \
+    --url http://localhost:4000/ \
+    --data '{"query":"query sample_name { books { title author }}"}'
+
+curl --request POST \
+    --header 'content-type: application/json' \
+    --url http://localhost:4000/ \
+    --data '{"query":"query ExampleQuery {\n  books(id:1) {\n    id    \n    title\n    author\n  }\n}"}'
+
+    
